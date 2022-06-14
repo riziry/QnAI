@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QnAI - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/nav_logo.png" alt="logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="member-notification.html">Notification</a></li>
+                <li class="search-container">
+                    <form action="/action_page.php">
+                      <input class="search-box" type="text" placeholder="Search" name="search">
+                      <button class="button button-search" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img class="profile-pic" src="assets/profile_pic.png" alt="profile"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Check profile</a>
+              <a href="#">Edit profile</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+    </header>
+  
+    
+      <div class="content">
+        <div class="question-card">
+          <pic>
+            <img class="white-logo" src="assets/white_logo.png" alt="logo">
+            <text>
+              <p class="p1">Anything we can help?</p>
+              <p class="p2">Ask a question so that we can help you!</p>
+              <a href="make-question.html"><button class="question-card-button" href="make-question.html">Ask question</button></a>
+            </text>
+          </pic>
+        </div>
+        <br>
+        <div class="question-detail-card">
+          <container>
+            <pic>
+              <img class="profile-pic" src="assets/profile_pic.png" alt="profile">
+              <p class="bold-card">Yolanda</p>
+              <p class="regular-card">25 March</p>
+            </pic>
+            <img class="right-line" src="assets/right-line.png" alt="I">
+            <text>
+              <p class="bold-card">Here's a question for you</p>
+              <p class="regular-card" id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vestibulum nunc. In hac habitasse platea dictumst. Aenean vitae imperdiet nunc. Sed lobortis ac lorem in malesuada. Sed lacus ex, sodales id commodo in, ultricies id nisl. Vestibulum nisi enim, sollicitudin sit amet posuere a, egestas non diam. Vivamus sed nibh urna. Nullam eget purus congue ante egestas cursus. Donec venenatis pharetra aliquet. Aenean in condimentum odio. Nam eget erat a tortor convallis dictum. In hac habitasse platea dictumst. Morbi rhoncus tortor diam, at aliquam massa vehicula quis.</p>
+              <button class="button-read-more" onclick ="location.href='#'"> Read more </button>
+            </text>
+          </container>
+        </div>
+      </div>
+    
+  </div>
+    
+    
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+</body>
+</html>

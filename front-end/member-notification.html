@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QnAI - Notification</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/nav_logo.png" alt="logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">Notification</a></li>
+                <li class="search-container">
+                    <form action="/action_page.php">
+                      <input class="search-box" type="text" placeholder="Search" name="search">
+                      <button class="button button-search" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img class="profile-pic" src="assets/profile_pic.png" alt="profile"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Check profile</a>
+              <a href="#">Edit profile</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+    </header>
+
+    <div class="form-content">
+        <div class="notification-card-new">
+            <p class="bold-card">Your answer currently have 10 upvotes</p>
+            <button class="button-read-more" onclick ="location.href='#'"> Check out other answers! </button>
+        </div>
+        <div class="notification-card">
+            <p class="bold-card">Your answer currently have 10 upvotes</p>
+            <button class="button-read-more" onclick ="location.href='#'"> Check out other answers! </button>
+        </div>
+    </div>
+</body>
+</html>
